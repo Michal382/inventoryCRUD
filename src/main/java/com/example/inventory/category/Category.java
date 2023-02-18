@@ -11,6 +11,19 @@ public class Category {
     @Column(length = 50, nullable = false, unique = true)
     private String name;
 
+
+    public Category() {
+    }
+
+    public Category(Integer id) {
+        this.id = id;
+    }
+
+    public Category(String name) {
+        this.name = name;
+    }
+
+
     public Integer getId() {
         return id;
     }
